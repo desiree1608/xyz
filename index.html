@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Hez</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffecf2; 
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .qoobee {
+            width: 400px;
+            margin-top: 100px;
+            cursor: pointer; 
+        }
+
+        .description {
+            font-size: 14px;
+            color: #e60073; 
+            margin-top: 5px;
+        }
+
+        .message-box {
+            display: none; 
+            border: 2px solid #e60073; 
+            padding: 10px; 
+            border-radius: 5px; 
+            max-width: 80%; 
+            box-sizing: border-box; 
+        }
+
+        .message {
+            font-size: 18px;
+            color: #333; 
+            margin-top: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://media1.giphy.com/media/j2XZ8uOxmHDr4czXF5/giphy.gif" alt="Qoobee" class="qoobee" onclick="showMessage()">
+        <p class="description" id="clickMe">Click me ❤️</p>
+    </div>
+    
+    <div class="message-box" id="messageBox">
+        <div class="message">
+            <h2>My Love,</h2>
+            <p>Hi hez, I wanted to convey my heartfelt appreciation<br>
+                 for the incredible gift you gave me.<br>
+                 Everytime i see it or hug it, I'll be reminded of your love<br>
+                 and the effort you put into making me happy<br> 
+               Your thoughtfulness and attention to detail truly<br>
+                touched my heart. I feel so fortunate to have<br>
+               someone as considerate and caring as you in my life.<br>
+               I cherish both the gift and the wonderful person who gave it to me.<br>
+                Thank you for making me feel special. I love you<3</p>
+            <p>With all my love,<br>Krae</p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            var qoobee = document.querySelector(".qoobee");
+            var messageBox = document.getElementById("messageBox");
+            var clickMe = document.getElementById("clickMe");
+
+            qoobee.style.display = "none"; 
+            messageBox.style.display = "block"; 
+            clickMe.style.display = "none";
+        }
+    </script>
+</body>
+</html>
